@@ -1,0 +1,965 @@
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&family=Roboto&display=swap");
+
+html, body {
+/*  background: #ece5db; */
+background: rgb(255, 255, 255);
+min-height: 90%;
+
+} 
+
+body{
+  background-size: 100%;
+  background-position: center top;
+  background-repeat: repeat;
+  height:500px;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+/*  animated background  */ 
+
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #dadde2;
+    overflow: hidden;
+}
+.background li {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #c4c6cb;
+    color: transparent;
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 7s ease-in forwards infinite;
+}
+undefined
+.background li:nth-child(0) {
+    animation-delay: 0s;
+    left: 16vw;
+    top: 29vh;
+    border-color: #eff3f8;
+}
+
+.background li:nth-child(1) {
+    animation-delay: 2s;
+    left: 93vw;
+    top: 70vh;
+    border-color: #eff3f8;
+}
+
+.background li:nth-child(2) {
+    animation-delay: 4s;
+    left: 36vw;
+    top: 43vh;
+    border-color: #eff3f8;
+}
+
+.background li:nth-child(3) {
+    animation-delay: 6s;
+    left: 70vw;
+    top: 84vh;
+    border-color: #eff3f8;
+}
+
+.background li:nth-child(4) {
+    animation-delay: 8s;
+    left: 3vw;
+    top: 7vh;
+}
+
+.background li:nth-child(5) {
+    animation-delay: 10s;
+    left: 63vw;
+    top: 65vh;
+    border-color: #eff3f8;
+}
+
+/* end of animated background */
+
+
+
+
+  
+#container {
+  position: abslute;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: x-large;
+  color: black;
+   position: relative;
+  z-index: 100;
+}
+
+.text2 {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: medium;
+   position: relative;
+  z-index: 100;
+}
+
+.title {
+  font-family: "Grechen Fuemen", cursive;
+  font-size: xxx-large;
+  text-align: center;
+  text-shadow: 1px 1px 3px #363532;
+  color: #5D7950;
+   position: relative;
+  z-index: 100;
+}
+
+/* button  starts here */
+
+.button {
+  /*   margin-top: 150px;
+  margin-left: 200px; */
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}
+
+.btn {
+  border: 1px solid #345179;
+  padding: 10px 30px;
+  color: #345179;
+  text-decoration: none;
+  margin-right: 5px;
+  font-size: 13px;
+  text-transform: uppercase;
+  float: left;
+  margin-bottom: 25px;
+}
+
+.btn-one {
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-one:hover {
+  color: black;
+  background-color: #5D7950;
+  transition: all 0.5s ease-in;
+}
+
+.btn-two {
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-two:hover {
+  color: black;
+  background-color: #5D7950;
+  transition: all 0.5s ease-in;
+}
+
+.btn-three {
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-three:hover {
+  color: black;
+  background-color: #5D7950;
+  transition: all 0.5s ease-in;
+}
+
+.btn-four {
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-four:hover {
+  color: black;
+  background-color: #5D7950;
+  transition: all 0.5s ease-in;
+}
+
+.btn-five {
+  padding: 12px 28px;
+  font-family: "Roboto", sans-serif;
+}
+
+.btn-five:hover {
+  color: black;
+  background-color: #5D7950;
+  transition: all 0.5s ease-in;
+}
+
+/* end of buttons */
+
+/* INDEX.HTML CSS */
+
+/* ramen bowl */
+.bowl{
+  position: absolute;
+  top: 400px;
+  left: 575px;
+  width: 320px;
+  height: 190px;
+  background: #D9604A;
+  border-radius: 0 0 125px 125px 
+     
+}
+
+/* .half-bowl{
+  position: absolute;
+  top: 325px;
+  left: 565px;
+  width: 450px;
+  height: 165px;
+  background: #ece5db;
+} */
+
+.bottom-bowl{
+  position: absolute;
+  top: 520px;
+  left: 690px;
+  width: 90px;
+  height: 100px;
+  background: #D9604A;
+   
+}
+
+
+
+/* index.html ramen noodles set 1 (left) */
+.noodle-1{
+  position: absolute;
+  top: 320px;
+  left: 590px;
+  width: 200px;
+  height: 200px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-2{
+   position: absolute;
+  top: 330px;
+  left: 595px;
+  width: 190px;
+  height: 210px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-3{
+  position: absolute;
+  top: 340px;
+  left: 600px;
+  width: 180px;
+  height: 200px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-4{
+  position: absolute;
+  top: 350px;
+  left: 605px;
+  width: 170px;
+  height: 190px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-5{
+   position: absolute;
+  top: 360px;
+  left: 610px;
+  width: 160px;
+  height: 180px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-6{
+  position: absolute;
+  top: 370px;
+  left: 615px;
+  width: 150px;
+  height: 170px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-6-5{
+  position: absolute;
+  top: 380px;
+  left: 620px;
+  width: 140px;
+  height: 160px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+/* index.html noodle set 2 (right) */
+
+.noodle-7{
+  position: absolute;
+  top: 330px;
+  left: 690px;
+  width: 200px;
+  height: 200px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-8{
+  position: absolute;
+  top: 340px;
+  left: 695px;
+  width: 190px;
+  height: 190px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-9{
+  position: absolute;
+  top: 350px;
+  left: 700px;
+  width: 180px;
+  height: 180px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-10{
+   position: absolute;
+  top: 360px;
+  left: 705px;
+  width: 170px;
+  height: 170px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-11{
+  position: absolute;
+  top: 370px;
+  left: 710px;
+  width: 160px;
+  height: 160px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+
+.noodle-12{
+  position: absolute;
+  top: 380px;
+  left: 715px;
+  width: 150px;
+  height: 150px;
+  background: #E3B67A;
+  border-radius: 50%;
+}
+
+.noodle-13{
+  position: absolute;
+  top: 390px;
+  left: 720px;
+  width: 140px;
+  height: 140px;
+  background: #e3a047;
+  border-radius: 50%;
+}
+/* end of noodles sets */
+
+/* egg */
+.egg{
+  position: absolute;
+  top: 380px;
+  left: 620px;
+  width: 200px; 
+   height: 105px; 
+   background: 	#E5D9C3; 
+   -moz-border-radius: 100px / 50px; 
+   -webkit-border-radius: 100px / 50px; 
+   border-radius: 100px / 50px;
+   transform: rotate(45deg);
+}
+
+.egg-yolk{
+  position: absolute;
+  top: 395px;
+  left: 660px;
+  width: 100px; 
+   height: 50px; 
+   background: 	#eb9523; 
+   -moz-border-radius: 100px / 50px; 
+   -webkit-border-radius: 100px / 50px; 
+   border-radius: 100px / 50px;
+   transform: rotate(35deg);
+}
+
+/* chopsticks */
+.chopstick-1{
+  position: absolute;
+  width: 15px;
+  height: 300px;
+  background: #ead5b9;
+  border-radius: 5px;
+  top: 220px;
+  left: 790px;
+  transform: rotate(30deg);
+}
+
+.chopstick-2{
+  position: absolute;
+  width: 15px;
+  height: 300px;
+  background: #ead5b9;
+  border-radius: 5px;
+  top: 220px;
+  left: 820px;
+  transform: rotate(30deg);
+}
+
+/* onion */
+
+.onion-1{
+  position: absolute;
+  top: 350px;
+  left: 770px;
+  width: 20px;
+  height: 10px;
+  background: #5D7950;
+  transform: rotate(30deg);
+}
+
+.onion-2{
+  position: absolute;
+  top: 380px;
+  left: 770px;
+  width: 20px;
+  height: 10px;
+  background: #5D7950;
+  transform: rotate(35deg); 
+}
+
+.onion-3{
+  position: absolute;
+  top: 380px;
+  left: 810px;
+  width: 20px;
+  height: 10px;
+  background: #5D7950;
+  transform: rotate(45deg);
+}
+/* END OF INDEX.HTML CSS  */
+
+/* STEP1.HTML CSS */
+
+.noodles{ 
+  position: absolute;
+  left:215px;
+  top: 240px;
+   
+}
+
+.noodles1{
+}  
+
+.noodles-text{
+  position: absolute;
+  top: 180px;
+  left: 250px;
+  width: 200px;
+  height: 100px;
+}
+
+.water{
+  width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: 110px;
+  margin-left: 650px;
+  border: 5px solid #fff;
+}
+
+.water2{
+  width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: 15px;
+  margin-left: 670px;
+  border: 5px solid #fff;
+}
+
+.water1{
+   width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 730px;
+  border: 5px solid #fff;
+}
+
+.water-text{
+ position: absolute;
+  top: 180px;
+  left: 650px;
+  width: 200px;
+  height: 100px; 
+}
+
+.egg-1{
+  position: absolute;
+ display:block;
+ width: 140px;
+ height: 200px;
+  top: 240px;
+  left: 1020px;
+ background-color: #E5D9C3;
+ -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+ border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.egg-2{ /* yolk */
+  position: absolute;
+ display:block;
+ width: 80px;
+ height: 100px;
+  top: 310px;
+  left: 1050px;
+ background-color: #eb9523;
+ -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+ border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+.egg-1-text{
+  position: absolute;
+  top: 180px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;  
+}
+
+
+.green-onion{  
+/*  base of onion  */
+  width: 50px;
+  height: 50px;
+  background-color: #ece7e1;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: 130px;
+  margin-left: 650px;
+  border: 5px solid #fff;
+  transform: rotate(20deg);
+}
+
+.green-onion1{
+/*  branch of onion  */
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  background: #5c9066;
+  border-radius: 5px;
+  top: 505px;
+  left: 725px;
+  transform: rotate(30deg);
+}
+
+.green-onion2{
+  /*  branch of onion  */
+  position: absolute;
+  width: 10px;
+  height: 70px;
+  background: #5c9066;
+  border-radius: 5px;
+  top: 515px;
+  left: 728px;
+  transform: rotate(47deg);
+}
+
+.green-onion-text{
+ position: absolute;
+  top: 450px;
+  left: 650px;
+  width: 200px;
+  height: 100px;  
+}
+
+.seasoning{
+  position: absolute;
+  top: 550px;
+  left: 1050px;
+  width: 20px;
+  height: 10px;
+  background: #5D7950;
+  transform: rotate(45deg);
+}
+
+.seasoning1{
+   position: absolute;
+  top: 550px;
+  left: 1080px;
+  width: 20px;
+  height: 10px;
+  background: #8e7049;
+  transform: rotate(56deg);
+}
+
+.seasoning2{
+  position: absolute;
+  top: 550px;
+  left: 1110px;
+  width: 20px;
+  height: 10px;
+  background: #d21919;
+  transform: rotate(67deg); 
+}
+
+.seasoning3{
+  position: absolute;
+  top: 550px;
+  left: 1140px;
+  width: 20px;
+  height: 10px;
+  background: #e9e27d;
+  transform: rotate(27deg); 
+}
+
+.seasoning4{
+   position: absolute;
+  top: 580px;
+  left: 1130px;
+  width: 20px;
+  height: 10px;
+  background: #da6f25;
+  transform: rotate(-87deg);
+}
+
+.seasoning5{
+  position: absolute;
+  top: 580px;
+  left: 1080px;
+  width: 20px;
+  height: 10px;
+  background: #5D7950;
+  transform: rotate(-170deg);
+}
+
+.seasoning-text{
+ position: absolute;
+  top: 450px;
+  left: 1050px;
+  width: 200px;
+  height: 100px;  
+}
+
+/* END OF STEP1.HTML CSS */
+
+/* BEGINNING OF STEP2.HTML CSS */
+
+.pan {
+   display:block;
+   margin:2em auto;
+   width:15em;
+   height:10em;
+   background-color:#747472;
+   position:relative;
+  margin-left: 600px;
+  margin-top: 300px;
+}
+
+.pan:before {
+   position:absolute;
+   top:-1em;
+   left:0;
+   right:0;
+   height:2em;
+   background-color:#fff;
+   content:' ';
+   border-radius:50%;
+}
+
+.pan:after {
+   position:absolute;
+   bottom:-1em;
+   left:0;
+   right:0;
+   height:2em;
+   background-color:747472;
+   content:' ';
+   border-radius:50%;
+}
+
+.pan-handle{
+  position: absolute;
+  width: 30px;
+  height: 250px;
+  background: #747472;
+  border-radius: 5px;
+  top: 370px;
+  left: 545px;
+   transform: rotate(90deg);
+}
+
+.noodles-pan{
+  position: absolute;
+  left:570px;
+  top: 240px;
+    transform: rotate(67deg);
+}
+
+.seasoning{
+  position: absolute;
+  top: 400px;
+  left: 650px;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8e7049;
+  transform: rotate(56deg);
+}
+
+.seasoning1{
+  position: absolute;
+  top: 420px;
+  left: 645px;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  background: #da6f25;
+  transform: rotate(56deg);
+}
+
+.seasoning2{
+  position: absolute;
+  top: 400px;
+  left: 620px;
+  width: 20px;
+  height: 10px;
+  border-radius: 50%;
+  background: #e9e27d;
+  transform: rotate(56deg);
+}
+
+.egg-cooked{
+    position: absolute;
+ display:block;
+ width: 80px;
+ height: 140px;
+  top: 200px;
+  left: 430px;
+ background-color: #E5D9C3;
+ -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+ border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  transform: rotate(-56deg);
+}
+
+.egg-cooked1{ /* yolk */
+  position: absolute;
+ display:block;
+ width:40px;
+ height: 70px;
+  top: 240px;
+  left: 460px;
+ background-color: #eb9523;
+ -webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+ border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   transform: rotate(-56deg);
+}
+
+/* .stove{
+  position: absolute;
+  width: 15px;
+  height: 300px;
+  background: #ead5b9;
+  border-radius: 5px;
+  top: 650px;
+  left: 300px;
+  transform: rotate(90deg);
+} */
+
+.water-cooked{
+  width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: 150px;
+  margin-left: 830px;
+  border: 5px solid #fff; 
+}
+
+.water-cooked1{
+   width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: 20px;
+  margin-left: 750px;
+  border: 5px solid #fff; 
+}
+
+.water-cooked2{
+    width: 50px;
+  height: 50px;
+  background-color: #479de9;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -150px;
+  margin-left: 750px;
+  border: 5px solid #ff;
+}
+
+.flame{
+  width: 35px;
+  height: 35px;
+  background-color: #EF4134;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 650px;
+  border: 5px solid #F89419;
+}
+
+.flame1{
+  width: 35px;
+  height: 35px;
+  background-color: #F89419;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 690px;
+  border: 5px solid #EF4134;
+}
+
+.flame2{
+   width: 35px;
+  height: 35px;
+  background-color: #EF4134;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 730px;
+  border: 5px solid #F89419;
+}
+
+.flame3{
+   width: 35px;
+  height: 35px;
+  background-color: #F89419;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 770px;
+  border: 5px solid #EF4134;
+}
+
+.flame4{
+  width: 35px;
+  height: 35px;
+  background-color: #F89419;
+  border-radius: 50%;
+  border-top-right-radius: 0;
+  transform: rotate(-45deg);
+  float: left;
+  margin-top: -50px;
+  margin-left: 610px;
+  border: 5px solid #EF4134;
+}
+/* END OF STEP2.HTML CSS */
+
+/* BEGINNING OF STEP3.HTML CSS */
+
+.eye1{ 
+/* left eye   */
+  width: 20px;
+  height: 10px;
+  background: black;
+  border-radius: 100px / 50px;
+  margin-top: 250px;
+  margin-left: 690px;
+  transform: rotate(90deg);  
+}
+
+.eye2{
+/*  right eye  */
+  width: 20px;
+  height: 10px;
+  background: black;
+  border-radius: 100px / 50px;
+  margin-top: -10px;
+  margin-left: 745px;
+  transform: rotate(90deg); 
+}
+
+.mouth{
+  position: absolute;
+  top: 495px;
+  left: 675px;
+  width: 125px;
+  height: 80px;
+  background: black;
+  border-radius: 0 0 125px 125px 
+}
+
+.mouth1{
+  position: absolute;
+  top: 490px;
+  left: 677px;
+  width: 120px;
+  height: 80px;
+  background: #D9604A;
+  border-radius: 0 0 125px 125px
+}
+
+/* END OF STEP3.HTML */
+
